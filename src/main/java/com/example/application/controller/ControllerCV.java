@@ -21,6 +21,8 @@ public class ControllerCV {
         this.wrapper = new Wrapper_CV(pathToDataSource);
     }
 
+    // Cada vez que se le solicita los centros sanitarios, se convierte el xml a
+    // json gracias al wrapper
     @GetMapping(value = "/health-centers")
     public ResponseEntity<String> testGet() {
         return ResponseEntity.status(HttpStatus.OK).body(this.wrapper.getJSON());
