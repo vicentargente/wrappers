@@ -7,11 +7,12 @@ import java.util.*;
 
 public class Wrapper_CV {
     private File fuente;
-
+    //Constructor de la clase Wrapper_CV con un parámetro que indica la ruta
     public Wrapper_CV(String fuentePath) {
         this.fuente = new File(fuentePath);
     }
 
+    //Método encargado de realizar la conversión del archivo a formato JSON y devolver un String de este.
     public String getJSON(){
         try {
             Scanner lectorCSV = new Scanner(fuente);
