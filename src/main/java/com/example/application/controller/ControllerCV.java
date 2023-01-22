@@ -15,6 +15,8 @@ import com.example.application.wrappers.Wrapper_CV;
 public class ControllerCV {
     private Wrapper_CV wrapper;
 
+    // Este controlador extrae el path del fichero de la fuente de Euskadi y lo convierte a un String
+    // para pasarselo al objeto Wrapper_EUS que crearemos posteriormente.
     public ControllerCV() {
         String pathToDataSource = new File("").getAbsolutePath()
                 + "/src/main/resources/static/fuentesdatos/fuente_CV.csv";

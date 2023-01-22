@@ -15,6 +15,8 @@ import com.example.application.wrappers.Wrapper_IB;
 public class ControllerIB {
     private Wrapper_IB wrapper;
 
+    // Este controlador extrae el path del fichero de la fuente de Islas Baleares y lo convierte a un String
+    // para pasarselo al objeto Wrapper_IB que crearemos posteriormente.
     public ControllerIB() {
         String pathToDataSource = new File("").getAbsolutePath()
                 + "/src/main/resources/static/fuentesdatos/fuente_IB.xml";
