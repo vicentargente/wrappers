@@ -7,6 +7,8 @@ import java.io.IOException;
 // import java.util.Scanner;
 
 public class Lector {
+
+    //Le pasamos la ruta del fichero que queremos leer y lo transformamos en un string con formato utf-8
     public static String leerFicheroDeTexto(String ruta) throws FileNotFoundException {
         // Scanner input = new Scanner(new File(ruta), "utf-8");
 
